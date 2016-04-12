@@ -1,9 +1,9 @@
 [submodule "coordinatoren-businessunit-service"]
 	path = coordinatoren-businessunit-service
-	url = ../coordinatoren-businessunit-service/
+	url = https://github.com/tothepoint-itco/coordinatoren-businessunit-service.git
 [submodule "coordinatoren-contract-service"]
 	path = coordinatoren-contract-service
-	url = ../coordinatoren-contract-service
+	url = https://github.com/tothepoint-itco/coordinatoren-contract-service.git
 [submodule "coordinatoren-discovery"]
 	path = coordinatoren-discovery
-	url = ../coordinatoren-discovery/
+	url = https://github.com/tothepoint-itco/coordinatoren-discovery.git
