@@ -1,0 +1,9 @@
+[submodule "coordinatoren-businessunit-service"]
+	path = coordinatoren-businessunit-service
+	url = ../coordinatoren-businessunit-service/
+[submodule "coordinatoren-contract-service"]
+	path = coordinatoren-contract-service
+	url = ../coordinatoren-contract-service
+[submodule "coordinatoren-discovery"]
+	path = coordinatoren-discovery
+	url = ../coordinatoren-discovery/
