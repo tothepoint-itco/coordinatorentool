@@ -53,3 +53,12 @@ contract-service:
         - contract-mongo
     ports:
         - "8082:8080"
+
+
+
+edge:
+    image: company.tothepoint/coordinatoren-edge
+    ports:
+        - "8765:8765"
+    links:
+        - discovery1

@@ -3,6 +3,9 @@
 echo Building discovery-server...
 cd coordinatoren-discovery; gradle --daemon clean build distDocker; cd -
 
+echo Building edge-server...
+cd coordinatoren-edge; gradle --daemon clean build distDocker; cd -
+
 echo Building business-unit-service...
 cd coordinatoren-businessunit-service; gradle --daemon clean build distDocker; cd -
 

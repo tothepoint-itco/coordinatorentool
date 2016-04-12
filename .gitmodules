@@ -10,3 +10,6 @@
 [submodule "coordinatoren-bediende-service"]
 	path = coordinatoren-bediende-service
 	url = https://github.com/tothepoint-itco/coordinatoren-bediende-service.git
+[submodule "coordinatoren-edge"]
+	path = coordinatoren-edge
+	url = https://github.com/tothepoint-itco/coordinatoren-edge.git
