@@ -9,4 +9,4 @@
 	url = https://github.com/tothepoint-itco/coordinatoren-discovery.git
 [submodule "coordinatoren-bediende-service"]
 	path = coordinatoren-bediende-service
-	url = ./coordinatoren-bediende-service
+	url = https://github.com/tothepoint-itco/coordinatoren-bediende-service.git
