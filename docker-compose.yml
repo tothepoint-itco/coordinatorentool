@@ -1,0 +1,42 @@
+rabbitmq:
+    image: rabbitmq:3
+    ports:
+        - "5672:5672"
+        - "15672:15672"
+
+business-unit-mongo:
+    image: mongo
+    ports:
+        - "9001:27017"
+contract-mongo:
+    image: mongo
+    ports:
+        - "9002:27017"
+
+discovery1:
+    image: company.tothepoint/coordinatoren-discovery
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker1"
+    ports:
+        - "8761:8761"
+    links:
+        - discovery2
+discovery2:
+    image: company.tothepoint/coordinatoren-discovery
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker2 -Deureka.instance.hostname=discovery2"
+    ports:
+        - "8762:8762"
+
+business-unit-service:
+    image: company.tothepoint/coordinatoren-businessunit-service
+    links:
+        - rabbitmq
+        - business-unit-mongo
+    ports:
+        - "8080:8080"
+contract-service:
+    image: company.tothepoint/coordinatoren-contract-service
+    links:
+        - rabbitmq
+        - contract-mongo
