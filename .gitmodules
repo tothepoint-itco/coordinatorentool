@@ -13,3 +13,6 @@
 [submodule "coordinatoren-edge"]
 	path = coordinatoren-edge
 	url = https://github.com/tothepoint-itco/coordinatoren-edge.git
+[submodule "coordinatoren-frontend"]
+	path = coordinatoren-frontend
+	url = https://github.com/tothepoint-itco/coordinatoren-frontend.git
