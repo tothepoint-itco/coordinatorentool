@@ -9,14 +9,23 @@ public class Akkoord {
     private String id;
 
     private String projectCode;
+    private String opdrachtId;
+    private String consultantId;
+
+    public String getOpdrachtId() {
+        return opdrachtId;
+    }
+
     private LocalDate informeelEindDatum;
     private LocalDate informeelStartDatum;
 
     public Akkoord() {
     }
 
-    public Akkoord(String projectCode, LocalDate informeelEindDatum, LocalDate informeelStartDatum) {
+    public Akkoord(String projectCode, String opdrachtId, String consultantId, LocalDate informeelEindDatum, LocalDate informeelStartDatum) {
         this.projectCode = projectCode;
+        this.opdrachtId = opdrachtId;
+        this.consultantId = consultantId;
         this.informeelEindDatum = informeelEindDatum;
         this.informeelStartDatum = informeelStartDatum;
     }
@@ -35,6 +44,18 @@ public class Akkoord {
 
     public void setProjectCode(String projectCode) {
         this.projectCode = projectCode;
+    }
+
+    public void setOpdrachtId(String opdrachtId) {
+        this.opdrachtId = opdrachtId;
+    }
+
+    public String getConsultantId() {
+        return consultantId;
+    }
+
+    public void setConsultantId(String consultantId) {
+        this.consultantId = consultantId;
     }
 
     public LocalDate getInformeelEindDatum() {

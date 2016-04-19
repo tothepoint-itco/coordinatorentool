@@ -28,7 +28,7 @@ public class OpdrachtController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
     public ResponseEntity<Opdracht> getOpdracht(@PathVariable("id") String id) {
-        LOG.debug("GET /opdrachten/"+id+" getOpdracht("+id+") called!");
+        LOG.debug("GET /opdrachten/"+id+" getOpdrachtId("+id+") called!");
         Optional<Opdracht> opdrachtOption = Optional.ofNullable(opdrachtRepository.findOne(id));
 
         return opdrachtOption.map(opdracht->

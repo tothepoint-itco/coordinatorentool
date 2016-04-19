@@ -28,7 +28,7 @@ public class ConsultantController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
     public ResponseEntity<Consultant> getConsultant(@PathVariable("id") String id) {
-        LOG.debug("GET /consultants/"+id+" getConsultant("+id+") called!");
+        LOG.debug("GET /consultants/"+id+" getConsultantId("+id+") called!");
         Optional<Consultant> consultantOption = Optional.ofNullable(consultantRepository.findOne(id));
 
         return consultantOption.map(consultant->
