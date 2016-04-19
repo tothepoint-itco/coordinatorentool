@@ -72,12 +72,12 @@ use of HTTP status codes.
 = Resources
 
 
-[[resources-bediende]]
+[[resources-consultant]]
 == Bediende
 The Bediende resource is used to create, modify and list bediendes.
 
 
-[[resource-bediende-list]]
+[[resource-consultant-list]]
 === Listing bediendes
 A `GET` request lists all of the service's bediendes.
 
@@ -92,51 +92,51 @@ include::{snippets}/list-bediendes/curl-request.adoc[]
 include::{snippets}/list-bediendes/http-response.adoc[]
 
 
-[[resource-bediende-get]]
+[[resource-consultant-get]]
 === Fetching people
 A `GET` request fetches a specific person.
 
-include::{snippets}/get-bediende/response-fields.adoc[]
+include::{snippets}/get-consultant/response-fields.adoc[]
 
 ==== Example request
 
-include::{snippets}/get-bediende/curl-request.adoc[]
+include::{snippets}/get-consultant/curl-request.adoc[]
 
 ==== Example response
 
-include::{snippets}/get-bediende/http-response.adoc[]
+include::{snippets}/get-consultant/http-response.adoc[]
 
 
-[[resource-bediende-create]]
+[[resource-consultant-create]]
 === Creating people
-A `POST` request creates a new bediende.
+A `POST` request creates a new consultant.
 
 ==== Request structure
 
-include::{snippets}/create-bediende/request-fields.adoc[]
+include::{snippets}/create-consultant/request-fields.adoc[]
 
 ==== Example request
 
-include::{snippets}/create-bediende/curl-request.adoc[]
+include::{snippets}/create-consultant/curl-request.adoc[]
 
 ==== Example response
 
-include::{snippets}/create-bediende/http-response.adoc[]
+include::{snippets}/create-consultant/http-response.adoc[]
 
 
-[[resource-bediende-update]]
+[[resource-consultant-update]]
 === Updating people
-A `PUT` request updates an existing bediende.
+A `PUT` request updates an existing consultant.
 
 ==== Request structure
 
-include::{snippets}/create-bediende/request-fields.adoc[]
+include::{snippets}/create-consultant/request-fields.adoc[]
 
 ==== Example request
 
-include::{snippets}/update-bediende/curl-request.adoc[]
+include::{snippets}/update-consultant/curl-request.adoc[]
 
 ==== Example response
 
-include::{snippets}/update-bediende/http-response.adoc[]
+include::{snippets}/update-consultant/http-response.adoc[]
 

@@ -1,3 +1,3 @@
 spring:
   application:
-    name: bediende-service
+    name: consultant-service
