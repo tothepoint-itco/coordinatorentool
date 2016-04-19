@@ -1,7 +1,7 @@
 package company.tothepoint.repository;
 
-/**
- * Created by Kaj on 19/04/16.
- */
-public interface BestelbonRepository {
+import company.tothepoint.model.bestelbon.Bestelbon;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface BestelbonRepository extends MongoRepository<Bestelbon, String> {
 }
