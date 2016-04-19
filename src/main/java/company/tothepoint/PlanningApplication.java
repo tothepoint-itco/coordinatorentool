@@ -61,4 +61,9 @@ public class PlanningApplication {
 		container.setMessageListener(receiver);
 		return container;
 	}
+
+	@Bean
+	Receiver receiver() {
+		return new Receiver();
+	}
 }
