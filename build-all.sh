@@ -14,3 +14,6 @@ cd coordinatoren-bediende-service; gradle --daemon clean build distDocker; cd -
 
 echo Building contract-service...
 cd coordinatoren-contract-service; gradle --daemon clean build distDocker; cd -
+
+echo Building planning-service...
+cd coordinatoren-planning-service; gradle --daemon clean build distDocker; cd -
