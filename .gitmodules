@@ -19,3 +19,6 @@
 [submodule "coordinatoren-planning-service"]
 	path = coordinatoren-planning-service
 	url = https://github.com/tothepoint-itco/coordinatoren-planning-service.git
+[submodule "coordinatoren-beheer-service"]
+	path = coordinatoren-beheer-service
+	url = https://github.com/tothepoint-itco/coordinatoren-beheer-service.git
