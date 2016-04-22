@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/tothepoint-itco/coordinatorentool.png?label=ready&title=Ready)](https://waffle.io/tothepoint-itco/coordinatorentool)
 # Getting started
 
 ## Prerequisites
