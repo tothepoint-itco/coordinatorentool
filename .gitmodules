@@ -1,7 +1,7 @@
 [submodule "coordinatoren-businessunit-service"]
 	path = coordinatoren-businessunit-service
 	url = https://github.com/tothepoint-itco/coordinatoren-businessunit-service.git
-	branch = origin/master
+	branch = master
 [submodule "coordinatoren-contract-service"]
 	path = coordinatoren-contract-service
 	url = https://github.com/tothepoint-itco/coordinatoren-contract-service.git
