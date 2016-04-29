@@ -1,12 +1,15 @@
 [submodule "coordinatoren-businessunit-service"]
 	path = coordinatoren-businessunit-service
 	url = https://github.com/tothepoint-itco/coordinatoren-businessunit-service.git
+	branch = master
 [submodule "coordinatoren-contract-service"]
 	path = coordinatoren-contract-service
 	url = https://github.com/tothepoint-itco/coordinatoren-contract-service.git
+	branch = master
 [submodule "coordinatoren-discovery"]
 	path = coordinatoren-discovery
 	url = https://github.com/tothepoint-itco/coordinatoren-discovery.git
+	branch = master
 [submodule "coordinatoren-bediende-service"]
 	path = coordinatoren-bediende-service
 	url = https://github.com/tothepoint-itco/coordinatoren-bediende-service.git
@@ -14,12 +17,16 @@
 [submodule "coordinatoren-edge"]
 	path = coordinatoren-edge
 	url = https://github.com/tothepoint-itco/coordinatoren-edge.git
+	branch = master
 [submodule "coordinatoren-frontend"]
 	path = coordinatoren-frontend
 	url = https://github.com/tothepoint-itco/coordinatoren-frontend.git
+	branch = master
 [submodule "coordinatoren-planning-service"]
 	path = coordinatoren-planning-service
 	url = https://github.com/tothepoint-itco/coordinatoren-planning-service.git
+	branch = master
 [submodule "coordinatoren-beheer-service"]
 	path = coordinatoren-beheer-service
 	url = https://github.com/tothepoint-itco/coordinatoren-beheer-service.git
+	branch = master
