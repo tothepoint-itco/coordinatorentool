@@ -4,14 +4,10 @@ rabbitmq:
         - "5672:5672"
         - "15672:15672"
 
-business-unit-mongo:
+businessunit-mongo:
     image: mongo
     ports:
         - "9001:27017"
-bediende-mongo:
-    image: mongo
-    ports:
-        - "9003:27017"
 contract-mongo:
     image: mongo
     ports:
@@ -20,44 +16,29 @@ planning-mongo:
     image: mongo
     ports:
         - "9004:27017"
+edge-mongo:
+    image: mongo
+    ports:
+        - "9006:27017"
 
 discovery:
-    image: company.tothepoint/coordinatoren-discovery
+    image: tothepointitco/coordinatoren-discovery
     environment:
         - "JAVA_OPTS=-Dspring.profiles.active=docker1"
     ports:
         - "8761:8761"
-
-#discovery2:
-#    image: company.tothepoint/coordinatoren-discovery
-#    environment:
-#        - "JAVA_OPTS=-Dspring.profiles.active=docker2 -Deureka.instance.hostname=discovery2"
-#    ports:
-#        - "8762:8762"
-
-frontend:
-    build: ./coordinatoren-frontend
-    ports:
-        - "8000:8000"
-
-business-unit-service:
-    image: company.tothepoint/coordinatoren-businessunit-service
+        
+businessunit-service:
+    image: tothepointitco/coordinatoren-businessunit-service
     links:
         - rabbitmq
-        - business-unit-mongo
+        - businessunit-mongo
         - discovery
     ports:
         - "8080:8080"
-bediende-service:
-    image: company.tothepoint/coordinatoren-bediende-service
-    links:
-        - rabbitmq
-        - bediende-mongo
-        - discovery
-    ports:
-        - "8081:8080"
+
 contract-service:
-    image: company.tothepoint/coordinatoren-contract-service
+    image: tothepointitco/coordinatoren-contract-service
     links:
         - rabbitmq
         - contract-mongo
@@ -66,15 +47,16 @@ contract-service:
         - "8082:8080"
 
 planning-service:
-    image: company.tothepoint/coordinatoren-planning-service
+    image: tothepointitco/coordinatoren-planning-service
     links:
         - rabbitmq
         - planning-mongo
         - discovery
 
 edge:
-    image: company.tothepoint/coordinatoren-edge
+    image: tothepointitco/coordinatoren-edge
     ports:
         - "8765:8765"
     links:
         - discovery
+        - edge-mongo
