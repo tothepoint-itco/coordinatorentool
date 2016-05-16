@@ -27,7 +27,7 @@ discovery:
         - "JAVA_OPTS=-Dspring.profiles.active=docker1"
     ports:
         - "8761:8761"
-        
+
 businessunit-service:
     image: tothepointitco/coordinatoren-businessunit-service
     links:
@@ -36,6 +36,8 @@ businessunit-service:
         - discovery
     ports:
         - "8080:8080"
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker,local"
 
 contract-service:
     image: tothepointitco/coordinatoren-contract-service
@@ -45,6 +47,8 @@ contract-service:
         - discovery
     ports:
         - "8082:8080"
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker,local"
 
 planning-service:
     image: tothepointitco/coordinatoren-planning-service
@@ -52,6 +56,8 @@ planning-service:
         - rabbitmq
         - planning-mongo
         - discovery
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker,local"
 
 edge:
     image: tothepointitco/coordinatoren-edge
@@ -60,3 +66,5 @@ edge:
     links:
         - discovery
         - edge-mongo
+    environment:
+        - "JAVA_OPTS=-Dspring.profiles.active=docker,local"
